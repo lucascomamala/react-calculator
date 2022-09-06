@@ -17,22 +17,12 @@ Simple calculator web app built using React
 
 ## Getting Started
 
+## Setup
 To get a local copy up and running follow these simple example steps.
-(COMING SOON)
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Clone the repo
+- cd into the project directory
+- npm install
+- npm start (to start/run the project)
 
 ## Authors
 
