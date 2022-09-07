@@ -14,6 +14,7 @@ export default class Calculator extends React.Component {
   }
 }
 
+// eslint-disable-next-line arrow-body-style
 const KeyBoard = () => {
   return (
     <div className="keyboard">
@@ -23,7 +24,7 @@ const KeyBoard = () => {
       <button type="button" className="key" style={{ gridArea: 'seven' }}>7</button>
       <button type="button" className="key" style={{ gridArea: 'eight' }}>8</button>
       <button type="button" className="key" style={{ gridArea: 'nine' }}>9</button>
-      <button type="button" className="key" style={{ gridArea: 'four' }} >4</button>
+      <button type="button" className="key" style={{ gridArea: 'four' }}>4</button>
       <button type="button" className="key" style={{ gridArea: 'five' }}>5</button>
       <button type="button" className="key" style={{ gridArea: 'six' }}>6</button>
       <button type="button" className="key" style={{ gridArea: 'one' }}>1</button>
@@ -36,7 +37,6 @@ const KeyBoard = () => {
       <button type="button" className="key operator" style={{ gridArea: 'mult' }}>&times;</button>
       <button type="button" className="key operator" style={{ gridArea: 'minus' }}>&minus;</button>
       <button type="button" className="key operator" style={{ gridArea: 'plus' }}>+</button>
-      
     </div>
   );
 };
