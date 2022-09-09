@@ -1,6 +1,7 @@
 /* eslint-disable react/prefer-stateless-function */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Calculator.css';
 import calculate from '../logic/calculate';
 
@@ -60,4 +61,8 @@ const KeyBoard = (props) => {
       <button type="button" className="key operator" style={{ gridArea: 'plus' }} onClick={handler}>+</button>
     </div>
   );
+};
+
+KeyBoard.propTypes = {
+  handler: PropTypes.func.isRequired,
 };
