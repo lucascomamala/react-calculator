@@ -6,15 +6,6 @@ import './Calculator.css';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     next: null,
-  //     operation: null,
-  //     total: null,
-  //   };
-  //   this.clickHandler = this.clickHandler.bind(this);
-  // }
   const [state, SetState] = useState({});
 
   const clickHandler = (e) => {
