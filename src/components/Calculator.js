@@ -33,7 +33,6 @@ const Calculator = () => {
       <KeyBoard handler={clickHandler} />
     </div>
   );
-
 };
 
 const KeyBoard = (props) => {
