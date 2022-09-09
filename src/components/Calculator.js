@@ -20,38 +20,44 @@ export default class Calculator extends React.Component {
   }
 
   render() {
+    const { total, next, operation } = this.state;
     return (
       <div className="calcu">
-        <p className="display">69420</p>
-        <KeyBoard />
+        <p className="display">
+          {total}
+          {operation}
+          {next}
+        </p>
+        <KeyBoard handler={this.clickHandler} />
       </div>
     );
   }
 }
 
 // eslint-disable-next-line arrow-body-style
-const KeyBoard = () => {
+const KeyBoard = (props) => {
+  const { handler } = props;
   return (
     <div className="keyboard">
-      <button type="button" className="key AC" style={{ gridArea: 'AC' }} onClick={this.clickHandler}>AC</button>
-      <button type="button" className="key" style={{ gridArea: 'plusmin' }} onClick={this.clickHandler}>&plusmn;</button>
-      <button type="button" className="key" style={{ gridArea: 'percent' }} onClick={this.clickHandler}>%</button>
-      <button type="button" className="key" style={{ gridArea: 'seven' }} onClick={this.clickHandler}>7</button>
-      <button type="button" className="key" style={{ gridArea: 'eight' }} onClick={this.clickHandler}>8</button>
-      <button type="button" className="key" style={{ gridArea: 'nine' }} onClick={this.clickHandler}>9</button>
-      <button type="button" className="key" style={{ gridArea: 'four' }} onClick={this.clickHandler}>4</button>
-      <button type="button" className="key" style={{ gridArea: 'five' }} onClick={this.clickHandler}>5</button>
-      <button type="button" className="key" style={{ gridArea: 'six' }} onClick={this.clickHandler}>6</button>
-      <button type="button" className="key" style={{ gridArea: 'one' }} onClick={this.clickHandler}>1</button>
-      <button type="button" className="key" style={{ gridArea: 'two' }} onClick={this.clickHandler}>2</button>
-      <button type="button" className="key" style={{ gridArea: 'three' }} onClick={this.clickHandler}>3</button>
-      <button type="button" className="key" style={{ gridArea: 'zero' }} onClick={this.clickHandler}>0</button>
-      <button type="button" className="key" style={{ gridArea: 'decimal' }} onClick={this.clickHandler}>.</button>
-      <button type="button" className="key operator" style={{ gridArea: 'equals' }} onClick={this.clickHandler}>=</button>
-      <button type="button" className="key operator" style={{ gridArea: 'div' }} onClick={this.clickHandler}>&divide;</button>
-      <button type="button" className="key operator" style={{ gridArea: 'mult' }} onClick={this.clickHandler}>&times;</button>
-      <button type="button" className="key operator" style={{ gridArea: 'minus' }} onClick={this.clickHandler}>&minus;</button>
-      <button type="button" className="key operator" style={{ gridArea: 'plus' }} onClick={this.clickHandler}>+</button>
+      <button type="button" className="key AC" style={{ gridArea: 'AC' }} onClick={handler}>AC</button>
+      <button type="button" className="key" style={{ gridArea: 'plusmin' }} onClick={handler}>&plusmn;</button>
+      <button type="button" className="key" style={{ gridArea: 'percent' }} onClick={handler}>%</button>
+      <button type="button" className="key" style={{ gridArea: 'seven' }} onClick={handler}>7</button>
+      <button type="button" className="key" style={{ gridArea: 'eight' }} onClick={handler}>8</button>
+      <button type="button" className="key" style={{ gridArea: 'nine' }} onClick={handler}>9</button>
+      <button type="button" className="key" style={{ gridArea: 'four' }} onClick={handler}>4</button>
+      <button type="button" className="key" style={{ gridArea: 'five' }} onClick={handler}>5</button>
+      <button type="button" className="key" style={{ gridArea: 'six' }} onClick={handler}>6</button>
+      <button type="button" className="key" style={{ gridArea: 'one' }} onClick={handler}>1</button>
+      <button type="button" className="key" style={{ gridArea: 'two' }} onClick={handler}>2</button>
+      <button type="button" className="key" style={{ gridArea: 'three' }} onClick={handler}>3</button>
+      <button type="button" className="key" style={{ gridArea: 'zero' }} onClick={handler}>0</button>
+      <button type="button" className="key" style={{ gridArea: 'decimal' }} onClick={handler}>.</button>
+      <button type="button" className="key operator" style={{ gridArea: 'equals' }} onClick={handler}>=</button>
+      <button type="button" className="key operator" style={{ gridArea: 'div' }} onClick={handler}>&divide;</button>
+      <button type="button" className="key operator" style={{ gridArea: 'mult' }} onClick={handler}>&#215;</button>
+      <button type="button" className="key operator" style={{ gridArea: 'minus' }} onClick={handler}>&minus;</button>
+      <button type="button" className="key operator" style={{ gridArea: 'plus' }} onClick={handler}>+</button>
     </div>
   );
 };
