@@ -1,41 +1,31 @@
 /* eslint-disable react/prefer-stateless-function */
 
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Calculator.css';
 import calculate from '../logic/calculate';
 
-export default class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      next: null,
-      operation: null,
-      total: null,
-    };
-    this.clickHandler = this.clickHandler.bind(this);
-  }
+const Calculator = () => {
+  const [state, SetState] = useState({});
 
-  clickHandler(e) {
-    this.setState((state) => calculate(state, e.target.textContent));
-  }
+  const clickHandler = (e) => {
+    SetState(calculate(state, e.target.textContent));
+  };
 
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <div className="calcu">
-        <p className="display">
-          {total}
-          {operation}
-          {next}
-        </p>
-        <KeyBoard handler={this.clickHandler} />
-      </div>
-    );
-  }
-}
+  const { total, next, operation } = state;
 
-// eslint-disable-next-line arrow-body-style
+  return (
+    <div className="calcu">
+      <p className="display">
+        {total}
+        {operation}
+        {next}
+      </p>
+      <KeyBoard handler={clickHandler} />
+    </div>
+  );
+};
+
 const KeyBoard = (props) => {
   const { handler } = props;
   return (
@@ -66,3 +56,5 @@ const KeyBoard = (props) => {
 KeyBoard.propTypes = {
   handler: PropTypes.func.isRequired,
 };
+
+export default Calculator;
