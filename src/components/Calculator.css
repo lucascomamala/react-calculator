@@ -1,13 +1,5 @@
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-#root {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to right, #00AAFF, #00FF6C);
+.calcu {
+  
 }
 
 .display {
