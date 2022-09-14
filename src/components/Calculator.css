@@ -7,15 +7,7 @@
 #root {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.calcu {
-  width: 400px;
-  height: 400px;
-  background-color: #f0f8ff;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 
 .display {
@@ -23,48 +15,44 @@
   align-items: center;
   justify-content: flex-end;
   margin: 0;
-  background-color: #858694;
-  height: 20%;
-  padding: 5px;
   color: white;
   font-size: 45px;
+  background-color: rgba(0, 0, 0, .75);
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  min-height: 100px;
 }
 
 .keyboard {
-  height: 80%;
   display: grid;
-  grid-template-areas:
-    "AC plusmin percent div"
-    "seven eight nine mult"
-    "four five six minus"
-    "one two three plus"
-    "zero zero decimal equals";
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.key {
-  border: 1px solid black;
-  font-weight: bold;
+.keyboard>button {
   transition: all 0.2s linear;
   cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
-.key:hover {
-  color: white;
-  background-color: #616161;
+.span-two {
+  grid-column: span 2;
 }
 
-.operator {
-  background-color: #f5913e;
+.keyboard>button:hover {
+  background-color: rgba(209, 209, 209, 0.75);
 }
 
-.operator:hover {
-  background-color: #db6300;
+.keyboard>.equals:hover {
+  background-color: rgba(219, 99, 0, 1);
 }
 
-.AC {
-  background-color: #ff4949;
-}
-
-.AC:hover {
-  background-color: #f00;
+.keyboard>.AC:hover {
+  background-color: rgba(255, 0, 0, 1);
 }
