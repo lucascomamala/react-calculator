@@ -1,6 +1,7 @@
-import React from "react"
+import React from 'react';
 
-const QuotePage = () => {
-  return <div>hello from quote page</div>
-}
-export default QuotePage
+const QuotePage = () => (
+  <div>hello from quote page</div>
+);
+
+export default QuotePage;

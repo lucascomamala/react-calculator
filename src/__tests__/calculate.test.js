@@ -1,4 +1,4 @@
-import calculate from "../logic/calculate";
+import calculate from '../logic/calculate';
 
 describe('calculate', () => {
   test('AC', () => {
@@ -39,4 +39,4 @@ describe('calculate', () => {
     const calcObj = { total: 10, next: null, operation: null };
     expect(calculate(calcObj, '±').total).toEqual('-10');
   });
-})
+});
