@@ -31,8 +31,7 @@ const Navbar = () => {
               {link.text}
             </NavLink>
           </li>
-        )
-        )}
+        ))}
       </ul>
     </nav>
   );
