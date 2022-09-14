@@ -16,7 +16,7 @@ const Navbar = () => {
       text: "Calculator",
     },
     {
-      id: 2,
+      id: 3,
       path: "/quote",
       text: "Quote",
     },
@@ -24,6 +24,7 @@ const Navbar = () => {
 
   return (
     <nav className="navBar">
+      <h1>Math Magicians</h1>
       <ul>
         {links.map(link => {
           return (
