@@ -5,7 +5,7 @@
   margin: 0;
   color: white;
   font-size: 45px;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 10px;
   word-wrap: break-word;
   word-break: break-all;
@@ -20,7 +20,7 @@
   grid-template-rows: repeat(5, 100px);
 }
 
-.keyboard>button {
+.keyboard > button {
   transition: all 0.2s linear;
   cursor: pointer;
   font-size: 2rem;
@@ -33,14 +33,14 @@
   grid-column: span 2;
 }
 
-.keyboard>button:hover {
+.keyboard > button:hover {
   background-color: rgba(209, 209, 209, 0.75);
 }
 
-.keyboard>.equals:hover {
+.keyboard > .equals:hover {
   background-color: rgba(219, 99, 0, 1);
 }
 
-.keyboard>.AC:hover {
+.keyboard > .AC:hover {
   background-color: rgba(255, 0, 0, 1);
 }
