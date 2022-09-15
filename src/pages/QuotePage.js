@@ -6,6 +6,7 @@ const QuotePage = () => (
     ”
     <br />
     – Albert Einstein
-  </blockquote>);
+  </blockquote>
+);
 
 export default QuotePage;
