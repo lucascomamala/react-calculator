@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 const App = () => (
   <>
     <Navbar />
-    <div className='container'>
+    <div className="container">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/calculator" element={<CalculatorPage />} />
