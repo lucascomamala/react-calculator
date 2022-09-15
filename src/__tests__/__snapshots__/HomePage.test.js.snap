@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <h2>
+    Welcome to our page!
+  </h2>,
+  <p>
+    hello from home page
+  </p>,
+]
+`;

@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family:
@@ -24,4 +30,10 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
 }
