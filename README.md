@@ -12,7 +12,7 @@ Simple calculator web app built using React
 
 ## Live Demo (if available)
 
-[Live Demo Link] (COMING SOON)
+[Live Demo Link](https://sprightly-froyo-9da063.netlify.app/calculator)
 
 
 ## Getting Started
