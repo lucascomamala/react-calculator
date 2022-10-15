@@ -10,7 +10,7 @@ Simple calculator web app built using React
 - HTML/CSS/JS
 - React
 
-## Live Demo (if available)
+## Live Demo=
 
 [Live Demo Link](https://sprightly-froyo-9da063.netlify.app/)
 
@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 - npm install
 - npm start (to start/run the project)
 
-## Authors
+## Author
 
 👤 **Lucas Comamala**
 
